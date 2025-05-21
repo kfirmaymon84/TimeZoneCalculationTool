@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Calculation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Zone Calculation Tool</h1>
+        
+        <div class="input-section">
+            <div class="base-time-section">
+                <h2>Base Time</h2>
+                <div class="form-group">
+                    <label for="baseCountry">Select Base Country:</label>
+                    <div class="search-container">
+                        <input type="text" id="baseCountry" class="search-select" placeholder="Type to search countries..." autocomplete="off">
+                        <div id="baseCountryDropdown" class="search-dropdown"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="baseTime">Enter Time (24-hour format):</label>
+                    <input type="time" id="baseTime" required>
+                </div>
+            </div>
+
+            <div class="comparison-section">
+                <h2>Compare With</h2>
+                <div class="form-group">
+                    <label for="compareCountry">Add Country to Compare:</label>
+                    <div class="search-container">
+                        <input type="text" id="compareCountry" class="search-select" placeholder="Type to search countries..." autocomplete="off">
+                        <div id="compareCountryDropdown" class="search-dropdown"></div>
+                    </div>
+                    <div class="button-group">
+                        <button id="addCountry" class="btn">Add</button>
+                        <button id="clearAll" class="btn btn-secondary">Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>Time Comparison Results</h2>
+            <div id="comparisonResults" class="results-grid">
+                <!-- Results will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
