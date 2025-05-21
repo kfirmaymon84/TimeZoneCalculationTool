@@ -81,4 +81,4 @@ For questions or suggestions, please open an issue in the GitHub repository.
 
 ---
 
-Made with ❤️ by [Your Name] 
+Made with ❤️ by Kfir Maymon
